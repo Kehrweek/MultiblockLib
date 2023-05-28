@@ -1,27 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "multiblocklib",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "MultiblockLib",
+  "description": "A library to abstract data-driven multiblock structures for developers.",
   "authors": [
-    "Me!"
+      "Kehrweek",
+      "Quinntyx",
+      "KiraCoding"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/totallynotjustbecauseimtoolazytonametheorg",
+    "sources": "https://github.com/totallynotjustbecauseimtoolazytonametheorg/multiblocklib"
   },
-  "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "license": "MIT",
+  "icon": "assets/multiblocklib/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "io.github.totallynotjustbecauseimtoolazytonametheorg.multiblocklib.fabric.MultiblockLibFabric"
     ]
   },
   "depends": {
     "fabric": "*",
     "minecraft": ">=1.19.2",
-    "architectury": ">=6.5.77"
-  }
+    "architectury": ">=6.5.82"
+  },
+  "mixins": [
+    "multiblocklib.mixins.json"
+  ]
 }

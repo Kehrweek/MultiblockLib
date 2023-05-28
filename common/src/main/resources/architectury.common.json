@@ -1,3 +1,6 @@
 {
-  "accessWidener": "examplemod.accesswidener"
+  "accessWidener": "multiblocklib.accesswidener",
+  "mixins": [
+    "multiblocklib.mixins.json"
+  ]
 }
